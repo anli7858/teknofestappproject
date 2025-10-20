@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.zenci.bisiklet"
+    namespace = "com.beyondbike"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.zenci.bisiklet"
+        applicationId = "com.beyondbike"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -61,5 +61,7 @@ dependencies {
     implementation(files("./libs/osmdroid-mapsforge-6.1.20.aar"))
     implementation(files("./libs/osmdroid-shape-6.1.20.aar"))
     implementation(files("./libs/osmdroid-wms-6.1.20.aar"))
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.0")
+
 
 }

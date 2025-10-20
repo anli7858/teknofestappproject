@@ -1,4 +1,4 @@
-package com.zenci.bisiklet
+package com.beyondbike
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

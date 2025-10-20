@@ -1,9 +1,9 @@
-package com.zenci.bisiklet.viewmodel
+package com.beyondbike.viewmodel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.zenci.bisiklet.data.SettingsDataStore
+import com.beyondbike.data.SettingsDataStore
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

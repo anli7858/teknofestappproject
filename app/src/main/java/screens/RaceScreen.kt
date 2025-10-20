@@ -1,4 +1,4 @@
-package com.zenci.bisiklet.screens
+package com.beyondbike.screens
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Text
@@ -8,7 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun RaceScreen(viewModel: com.zenci.bisiklet.BikeViewModel) {
+fun RaceScreen(viewModel: com.beyondbike.BikeViewModel) {
     Column(
         modifier = Modifier
             .fillMaxSize()

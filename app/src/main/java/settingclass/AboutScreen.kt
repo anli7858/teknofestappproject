@@ -1,4 +1,4 @@
-package com.zenci.bisiklet.settingclass
+package com.beyondbike.settingclass
 
 import android.os.Build
 import androidx.compose.foundation.clickable
@@ -47,7 +47,7 @@ fun AboutScreen(navController: NavController, onBack: () -> Unit = {}) {
                 modifier = Modifier.clickable {
                     tapCount++
                     if (tapCount >= 7) {
-                        navController.navigate("easteregg")
+                        navController.navigate("developer")
                         tapCount = 0
                     }
                 }

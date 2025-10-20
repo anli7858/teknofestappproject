@@ -1,4 +1,4 @@
-package com.zenci.bisiklet
+package com.beyondbike
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

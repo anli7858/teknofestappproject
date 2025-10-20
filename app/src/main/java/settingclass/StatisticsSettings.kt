@@ -1,4 +1,4 @@
-package com.zenci.bisiklet.settingclass
+package com.beyondbike.settingclass
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*

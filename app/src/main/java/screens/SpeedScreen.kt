@@ -1,4 +1,4 @@
-package com.zenci.bisiklet.screens
+package com.beyondbike.screens
 
 import android.Manifest
 import androidx.compose.foundation.layout.*
@@ -12,7 +12,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.isGranted
 import com.google.accompanist.permissions.rememberPermissionState
-import com.zenci.bisiklet.SpeedViewModel
+import com.beyondbike.SpeedViewModel
 
 @OptIn(ExperimentalPermissionsApi::class)
 @Composable

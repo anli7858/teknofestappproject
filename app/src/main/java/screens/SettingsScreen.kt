@@ -1,4 +1,4 @@
-package com.zenci.bisiklet.screens
+package com.beyondbike.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -11,7 +11,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
-import com.zenci.bisiklet.viewmodel.SettingsViewModel
+import com.beyondbike.viewmodel.SettingsViewModel
 
 @Composable
 fun SettingsScreen(navController: NavController) {
@@ -102,28 +102,6 @@ fun SettingsScreen(navController: NavController) {
                     Text(
                         text = "📝 Geri Bildirim",
                         fontSize = 20.sp,
-                        color = MaterialTheme.colorScheme.primary
-                    )
-                }
-            }
-
-            item {
-                Spacer(modifier = Modifier.height(16.dp))
-                Text("⚙️ Geliştirici Seçenekleri", fontSize = 20.sp, color = MaterialTheme.colorScheme.secondary)
-                Spacer(modifier = Modifier.height(8.dp))
-            }
-
-            item {
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .clickable { navController.navigate("map") }
-                        .padding(vertical = 12.dp),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    Text(
-                        text = "🗺️ Map Debug",
-                        fontSize = 18.sp,
                         color = MaterialTheme.colorScheme.primary
                     )
                 }

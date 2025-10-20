@@ -1,4 +1,4 @@
-package com.zenci.bisiklet.screens
+package com.beyondbike.screens
 
 import android.Manifest
 import android.content.Context
@@ -12,7 +12,6 @@ import com.google.accompanist.permissions.rememberPermissionState
 import com.google.accompanist.permissions.isGranted
 import org.osmdroid.config.Configuration
 import org.osmdroid.tileprovider.tilesource.TileSourceFactory
-import org.osmdroid.util.GeoPoint
 import org.osmdroid.views.MapView
 import org.osmdroid.views.overlay.mylocation.GpsMyLocationProvider
 import org.osmdroid.views.overlay.mylocation.MyLocationNewOverlay
@@ -37,7 +36,14 @@ fun MapScreen() {
                 mapView.setMultiTouchControls(true)
                 mapView.controller.setZoom(15.0)
 
-                val locationOverlay = MyLocationNewOverlay(GpsMyLocationProvider(ctx), mapView)
+
+                val gpsProvider = GpsMyLocationProvider(ctx).apply {
+                    setLocationUpdateMinTime(1000)
+                    setLocationUpdateMinDistance(0f)
+                }
+
+
+                val locationOverlay = MyLocationNewOverlay(gpsProvider, mapView)
                 locationOverlay.enableMyLocation()
                 locationOverlay.enableFollowLocation()
                 mapView.overlays.add(locationOverlay)

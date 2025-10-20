@@ -1,4 +1,4 @@
-package com.zenci.bisiklet.features
+package com.beyondbike.features
 
 import android.annotation.SuppressLint
 import android.util.Size
@@ -56,7 +56,7 @@ fun QrScannerScreen(onQrScanned: (String) -> Unit) {
                             .also { it.setSurfaceProvider(previewView.surfaceProvider) }
 
                         val imageAnalyzer = ImageAnalysis.Builder()
-                            .setTargetResolution(Size(1280, 720))
+                            .setTargetAspectRatio(AspectRatio.RATIO_16_9)
                             .setBackpressureStrategy(ImageAnalysis.STRATEGY_KEEP_ONLY_LATEST)
                             .build()
                             .also {
@@ -67,6 +67,7 @@ fun QrScannerScreen(onQrScanned: (String) -> Unit) {
                                     }
                                 }
                             }
+
 
                         val cameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
                         cameraProvider.unbindAll()

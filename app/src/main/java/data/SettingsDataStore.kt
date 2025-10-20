@@ -1,4 +1,4 @@
-package com.zenci.bisiklet.data
+package com.beyondbike.data
 
 import android.content.Context
 import androidx.datastore.preferences.core.*
